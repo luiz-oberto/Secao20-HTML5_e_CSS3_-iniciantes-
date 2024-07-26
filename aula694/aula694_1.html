@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando a Netflix</title>
+
+    <style>
+        /* * -> significa: selecione tudo que estiver na página */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    body {
+        background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/21a8ba09-4a61-44f8-8e2e-70e949c00c6f/e54a23b9-5f4f-4218-ba09-8e62ba01f9cc/BR-pt-20240722-POP_SIGNUP_TWO_WEEKS-perspective_WEB_f47ff160-2a29-4b8f-849f-20fecdea9010_small.jpg);
+        background-size: cover;
+        background-position: top center;
+    }
+
+        #heading {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        #heading div {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        #heading .h1{
+            /* margin -> dá espaço a margem
+               padding -> parecido com margin mas ao invés de apenas afasta/aproximar ele empurra 
+               padding pode ser configurado da seguinte maneira 
+               padding: 15px 0 0 50px ou padding: 15px(cima e vaixo) 0(esquerda e direita)*/
+            padding: 15px 0;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        #heading a {
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header id="heading">
+        <div>
+        <h1 class="h1">
+            <a href="#">Netflix</a>
+        </h1>
+
+        <h2 class="h1 na-direita">
+            <a href="#">Netflix</a>
+        </h2>
+        </div>
+    </header>
+</body>
+</html>
