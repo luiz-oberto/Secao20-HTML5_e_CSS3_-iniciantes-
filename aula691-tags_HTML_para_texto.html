@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+
+    <style>
+        .img-in-text {
+            width: 100px;
+            height: 50px;
+        }
+
+        .vermelho {
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cabeçalho</h1>
+    <!-- O texto é fluido -->
+    <p><b>Lorem</b> <strong>ipsum</strong> <i>dolor</i> <em>poiseeee</em> 
+        <a href="https://www.google.com/" target="_blank">amet
+        <!-- Você pode também copiar o link das imagens -->
+        <img class="img-in-text" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0bF2mL7adwgqdnkOTMFOOdsvVcUpOPvfcSQ&s" alt="logo da MDN" >
+    </a>
+        <del>vermelho</del> <ins>azul</ins>, <s>consectetur</s> <u>adipisicing</u> 
+        <small>elit</small>. 2<sup>2</sup> H<sub>2</sub>O Velit et quod maxime molestias debitis, laboriosam error deserunt culpa quisquam, repudiandae eligendi tempore fugiat ad quibusdam praesentium nobis. Corrupti, aliquam exercitationem.</p>
+    <!-- tag <b> deixa o texto em negrito -->
+    <!-- tag <strong> feita para ser pronunciada com mais força pelo leitor de texto para que é deficiente visual -->
+    <!-- tag <i></i> deixa o texto itálico-->
+    <!-- tag <em></em> deixa o texto itálico e dá êenfase ao texto-->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        <br> 
+        <q cite="https://developer.mozilla.org/pt-BR/">The CSS Custom Highlight API provides a mechanism for styling arbitrary text ranges on a document by using JavaScript to create the ranges, and CSS to style them.</q> elit. Velit et quod maxime molestias debitis, laboriosam error deserunt culpa quisquam, repudiandae eligendi tempore fugiat ad quibusdam praesentium nobis. Corrupti, aliquam exercitationem.</p>
+    
+    <!-- TAGS PARA UTILIZAR FORA DO <p> -->
+    <blockquote cite="https://developer.mozilla.org/pt-BR/">Aqui estou fazendo um bloco de citação</blockquote>
+    <blockquote cite="https://developer.mozilla.org/pt-BR/"><p>Aqui estou fazendo um bloco de citação com a tag de paragrafo</p></blockquote>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dignissimos quia quaerat nulla quam commodi sit nisi, facilis pariatur, ab laborum earum aliquid aspernatur consequatur quae ad? Nostrum, et qui!</p>
+        <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt ipsa harum voluptates porro a necessitatibus ratione, consectetur saepe beatae, quasi error adipisci. Nisi ratione libero ipsum commodi. Pariatur, ex.</p>
+        <hr>
+    <p>Isso é um texto com código <code>console.log</code> há um código Aqui</p>
+        <pre><code>
+            def soma(x: int, y: float | None = None) -> float:
+                if isinstance(y, float | int):
+                    return x + y
+                return x + x
+        </code>
+    </pre>
+<!-- containers genéricos -->
+<!-- span -> um container genérico INLINE pode ser usada dentro do paragrafo-->
+<p><span class="vermelho">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. <span class="vermelho">Autem velit dolor, quis voluptatum numquam harum,</span> enim adipisci dignissimos accusamus, impedit tenetur consequatur quos nisi fuga id dolore officia quod praesentium.</p>
+<hr>
+<!-- div -> conainer também genérica mas que é um bloco -->
+<div class="vermelho">Eu sou um bloco,</div>
+<div>Inline -> escrito na mesma linha ou dentro de blocos</div>
+<div>bloco -> é separado em blocos de linhas </div>
+
+</body>
+</html>
